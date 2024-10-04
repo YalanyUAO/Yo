@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <div id="card" class="screen">
+            <h2>Hola mi vida ❤️</h2>
+            <p>¿Recuerdas nuetra fecha especial? Ingresala aqui:</p>
+            <input type="text" id="secret-code" placeholder="Código" />
+            <button onclick="checkCode()">Entrar</button>
+            <p id="error-msg" style="color:red; display:none;">Código incorrecto, inténtalo de nuevo.</p>
+        </div>
+
+        <div id="time-screen" class="screen" style="display:none;">
+            <h2>¿Quieres saber cuánto tiempo llevamos juntos?</h2>
+            <button onclick="showTime()">¡Sí!</button>
+            <p id="time-count"></p>
+            <button onclick="nextScreen()">Next</button>
+        </div>
+
+        <div id="options-screen" class="screen" style="display:none;">
+            <h2>Elige una opción:</h2>
+            <button onclick="showPhotos()">Fotos</button>
+            <button onclick="showLetter()">Carta</button>
+            <button onclick="showYear()">Nuestro Primer Año</button>
+        </div>
+
+        <div id="photos-screen" class="screen" style="display:none;">
+            <h2>Nuestras Fotos mas lindas ❤️</h2>
+            <div id="photos">
+                <!-- Aquí puedes añadir tus fotos -->
+                <img src="IMG_6364.jpeg" alt="Foto 1">
+                <img src="IMG_7174 (1).jpeg" alt="Foto 2">
+            </div>
+            <button onclick="goBack()">Volver</button>
+        </div>
+
+        <div id="letter-screen" class="screen" style="display:none;">
+            <h2>Una Carta para Ti</h2>
+            <p>Hola mi amor, jajaj hay otra pagina web, perdon por joder tanto, pero estoy mejorando jiji
+                Sabes que te amo demasiado, que eres el amor de mi vida, a pesar de todo, siempre que me levanto
+                agradezco a la vida de tenerte a mi lado, y solamente le pido a Dios que me ilumine todos los dias 
+                para hacer las cosas bien, hacerte sentir bien y confiar en que lo haré, solo, esto es un pequeño 
+                recordatorio de que te amo con todo mi corazon y pues nada, espero de verdad la vida, el universo, Dios, 
+                tu y Beyonce, me permitan estar a tu lado de nuevo y demostrarte que tu niño si es capaz, te amo demasiado, 
+                eres el amor de mi vida, besos mi principe hermoso, muak muak...
+            </p>
+            <button onclick="goBack()">Volver</button>
+        </div>
+
+        <div id="year-screen" class="screen" style="display:none;">
+            <h2>Nuestro Primer Año</h2>
+            <p>Un año lleno de momentos especiales, amor y felicidad...</p>
+            <button onclick="goBack()">Volver</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
